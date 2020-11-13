@@ -1,4 +1,4 @@
-# Django Telusko Tutorials
+# Django Blog App
 
 ## Description
 
