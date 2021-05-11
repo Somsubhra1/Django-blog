@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "blog",
-    "users",
+    "users.apps.UsersConfig",
     "crispy_forms",
 ]
 
@@ -125,6 +125,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# directory in which files are stored
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# url for serving uploaded files
+MEDIA_URL = '/media/'
+
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
