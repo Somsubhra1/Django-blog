@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 from dotenv import load_dotenv
+import django_on_heroku
 
 import os
 
@@ -156,3 +157,5 @@ EMAIL_USE_TLS = True
 
 EMAIL_HOST_USER = os.environ.get("EMAIL_USER")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASS")
+
+django_on_heroku.settings(locals())

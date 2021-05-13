@@ -11,6 +11,8 @@ python-dotenv = "*"
 django-crispy-forms = "*"
 pillow = "*"
 gunicorn = "*"
+psycopg2-binary = "*"
+django-on-heroku = "*"
 
 [requires]
 python_version = "3.8"
