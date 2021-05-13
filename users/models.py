@@ -12,9 +12,9 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
 
-    def save(self):
+    def save(self, *args, **kwargs):
         # Override save method of a model
-        super().save()
+        super(Profile, self).save(*args, **kwargs)
 
         img = Image.open(self.image.path)
 
