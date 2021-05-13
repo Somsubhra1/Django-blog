@@ -138,5 +138,5 @@ dmypy.json
 cython_debug/
 
 .vscode/
-media/
+profile_pics/
 posts.json
